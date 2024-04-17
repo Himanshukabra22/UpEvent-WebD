@@ -1,0 +1,59 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.card {
+    width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-text {
+    padding: 10px;
+}
+/* Style for the container */
+.card {
+    width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    /* margin-right: 10px; */
+    padding: 10px;
+    /* overflow: hidden; */
+     /* Add this line to hide overflowing content */
+     width: calc(30% - 10px);
+     margin-bottom: 10px;
+}
+
+/* Style for the image */
+.card-img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    object-fit: cover; /* Add this line to ensure the image fills the container */
+}
+@media (max-width: 850px) {
+    .card {
+        width: calc(45% - 10px); /* Two cards per row with some space between */
+    }
+}
+
+/* Media query for mobile view */
+@media (max-width: 480px) {
+    .card {
+        width: calc(65% - 10px); /* One card per row with some space between */
+    }
+}
+
